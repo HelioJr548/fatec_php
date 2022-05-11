@@ -5,12 +5,12 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Cadastrar Candidato</title>
+   <title>Cadastrar Zona</title>
 </head>
 
 <body>
 
-   <form method="post" action="insert_cand.php" name="dados" onSubmit="return enviardados();">
+   <form method="post" action="isset_post_zona.php" name="dados" onSubmit="return enviardados();">
 
     <table width="588" border="0" align="center" vAlign="middle">
         <tr>
@@ -48,7 +48,7 @@
                 <input name="Submit" type="submit" class="formobjects" value="Cadastrar">
                 <input name="Reset" type="reset" class="formobjects" value="Limpar campos">
                 <button class="waves-effect waves-light btn" type="submit" name="action" formaction="select_all.php">ler
-                <button class="waves-effect waves-light btn" type="submit" name="action" formaction="isset_get_zona.php">Imprimir
+                <button class="waves-effect waves-light btn" type="submit" name="action" formaction="isset_post_zona.php">Imprimir
                 </button>
             <!--<button type='submit' formaction='pegar.php'>Consultar</button>-->
             </td>

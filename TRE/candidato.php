@@ -10,7 +10,7 @@
 
 <body>
 
-   <form method="post" action="insert_cand.php" name="dados" onSubmit="return enviardados();">
+   <form method="post" action="isset_post_cand.php" name="dados" onSubmit="return enviardados();">
 
     <table width="588" border="0" align="center" vAlign="middle">
         <tr>
@@ -71,8 +71,8 @@
             <td>
                 <input name="Submit" type="submit" class="formobjects" value="Cadastrar">
                 <input name="Reset" type="reset" class="formobjects" value="Limpar campos">
-                <button class="waves-effect waves-light btn" type="submit" name="action" formaction="select_all.php">ler
-                <button class="waves-effect waves-light btn" type="submit" name="action" formaction="deletar.php">Deletar
+                <button class="waves-effect waves-light btn" type="submit" name="action" formaction="le_texto_while_cand.php">ler
+                <button class="waves-effect waves-light btn" type="submit" name="action" formaction="isset_post_cand.php">Imprimir
                 </button>
             <!--<button type='submit' formaction='pegar.php'>Consultar</button>-->
             </td>

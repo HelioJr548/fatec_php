@@ -1,26 +1,23 @@
 <?php
 
 
-if (isset($_POST['municipio']) and isset($_POST['zona']) and isset($_POST['secao']) and isset($_POST['cpf']) and isset($_POST['rg']) and isset($_POST['nome'])) {
+if (isset($_POST['municipio']) and isset($_POST['partido']) and isset($_POST['candidato']) and isset($_POST['cargo'])) {
 
     $municipio = $_POST['municipio'];
-    $zona = $_POST['zona'];
-    $secao = $_POST['secao'];
-    $cpf = $_POST['cpf'];
-    $rg = $_POST['rg'];
-    $nome = $_POST['nome'];
+    $partido = $_POST['partido'];
+    $candidato = $_POST['candidato'];
+    $cargo = $_POST['cargo'];
+    
 
-    $conteudo = "$municipio\n $zona\n $secao\n $cpf\n $rg\n $nome\r\n";
+    $conteudo = "$municipio\n $partido\n $candidato\n $cargo\r\n";
 
     $arquivo = fopen('isset_post_cand.txt', 'a+');
     fwrite($arquivo, $conteudo);
     fclose($arquivo);
     echo "Municipio: $municipio </br>
-    Zona: $zona </br> 
-    secao: $secao </br> 
-    cpf: $cpf </br>
-    RG: $rg </br> 
-    Nome: $nome </br>" ;
+    Partido: $partido </br> 
+    Candidato: $candidato </br> 
+    Cargo: $cargo </br>";
 
 }
 echo "</br>";

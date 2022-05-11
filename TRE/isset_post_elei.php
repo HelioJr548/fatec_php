@@ -17,8 +17,8 @@ if (isset($_POST['municipio']) and isset($_POST['zona']) and isset($_POST['secao
     fclose($arquivo);
     echo "Municipio: $municipio </br>
     Zona: $zona </br> 
-    secao: $secao </br> 
-    cpf: $cpf </br>
+    Secao: $secao </br> 
+    CPF: $cpf </br>
     RG: $rg </br> 
     Nome: $nome </br>" ;
 

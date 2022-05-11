@@ -10,7 +10,7 @@
 
 <body>
 
-   <form method="post" action="isset_get_elei.php" name="dados" onSubmit="return enviardados();">
+   <form method="post" action="isset_post_elei.php" name="dados" onSubmit="return enviardados();">
 
     <table width="588" border="0" align="center" vAlign="middle">
         <tr>
