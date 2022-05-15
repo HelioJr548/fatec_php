@@ -5,14 +5,49 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Cadastrar Candidato</title>
+   <title>Cadastrar Eleitor</title>
 </head>
 
 <body>
 
-   <form method="post" action="isset_post_elei.php" name="dados" onSubmit="return enviardados();">
+   <form method="post" action="insert_eleitor.php" name="dados" onSubmit="return enviardados();">
 
-    <table width="588" border="0" align="center" vAlign="middle">
+    <table width="588" border="0" align="center">
+        <tr>
+            <td>
+                <label  for="nome"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Nome Completo:</label></font>
+            </td>
+            <td>
+                <font size="2">
+                    <input name="nome" type="text" id="nome" class="formbutton" size="52" maxlength="150" required>
+                </font>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label  for="cpf"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">CPF:</label></font>
+            </td>
+            <td>
+                <font size="2">
+                    <input name="cpf" type="text" id="cpf" class="formbutton" size="52" maxlength="150" required>
+                </font>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label  for="rg"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">RG:</label></font>
+            </td>
+            <td>
+                <font size="2">
+                    <input name="rg" type="text" id="rg" class="formbutton" size="52" maxlength="150" required>
+                </font>
+            </td>
+        </tr>
+
+        
+
         <tr>
             <td width="118">
                 <label for="municipio"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" >Municipio:</font></label>
@@ -40,39 +75,6 @@
                 <input name="secao" type="number" class="formbutton" id="secao" size="52" maxlength="150" required>
             </td>
         </tr>
-
-        <tr>
-            <td>
-                <label  for="cpf"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">CPF:</label></font>
-            </td>
-            <td>
-                <font size="2">
-                    <input name="cpf" type="text" id="cpf" class="formbutton" size="52" maxlength="150" required>
-                </font>
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <label  for="rg"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">RG:</label></font>
-            </td>
-            <td>
-                <font size="2">
-                    <input name="rg" type="text" id="rg" class="formbutton" size="52" maxlength="150" required>
-                </font>
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <label  for="nome"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Nome Completo:</label></font>
-            </td>
-            <td>
-                <font size="2">
-                    <input name="nome" type="text" id="nome" class="formbutton" size="52" maxlength="150" required>
-                </font>
-            </td>
-        </tr>
             <td height="85">
                 <p><strong>
                         <font face="Verdana, Arial, Helvetica, sans-serif">
@@ -90,6 +92,8 @@
                 <button class="waves-effect waves-light btn" type="submit" name="action" formaction="le_texto_while_elei.php">ler
                 <button class="waves-effect waves-light btn" type="submit" name="action" formaction="isset_post_elei.php">Imprimir
                 </button>
+                <button class="waves-effect waves-light btn" type="submit" name="action" formaction="deletar.php">Deletar
+               </button>
             <!--<button type='submit' formaction='pegar.php'>Consultar</button>-->
             </td>
         </tr>

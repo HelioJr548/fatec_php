@@ -5,12 +5,12 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Cadastrar Candidato</title>
+   <title>Cadastrar Municipio</title>
 </head>
 
 <body>
 
-   <form method="post" action="isset_post_muni.php" name="dados" onSubmit="return enviardados();">
+   <form method="post" action="insert_muni.php" name="dados" onSubmit="return enviardados();">
 
     <table width="588" border="0" align="center" vAlign="middle">
         <tr>
@@ -29,6 +29,26 @@
             </td>
             <td width="460">
                 <input name="uf" type="text" class="formbutton" id="uf" size="52" maxlength="150" required>
+            </td>
+            
+        </tr>
+
+        <tr>
+            <td width="118">
+                <label for="zona"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" >Zona:</font></label>
+            </td>
+            <td width="460">
+                <input name="zona" type="number" class="formbutton" id="zona" size="52" maxlength="150" required>
+            </td>
+            
+        </tr>
+
+        <tr>
+            <td width="118">
+                <label for="secao"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" >Secao:</font></label>
+            </td>
+            <td width="460">
+                <input name="secao" type="number" class="formbutton" id="secao" size="52" maxlength="150" required>
             </td>
             
         </tr>

@@ -10,9 +10,9 @@
 
 <body>
 
-   <form method="post" action="isset_post_cand.php" name="dados" onSubmit="return enviardados();">
+   <form method="post" action="insert_cand.php" name="dados" onSubmit="return enviardados();">
 
-    <table width="588" border="0" align="center" vAlign="middle">
+    <table width="588" border="0" align="center">
         <tr>
             <td width="118">
                 <label for="municipio"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" >Municipio:</font></label>
@@ -21,9 +21,8 @@
             <td width="460">
                 <input name="municipio" type="text" class="formbutton" id="municipio" size="52" maxlength="150" required>
             </td>
-            <td width="20">
-                <input name="UF" type="text" class="formbutton" id="UF" size="2" maxlength="20" placeholder="UF" required>
-            </td>
+
+            
         </tr>
 
         <tr>

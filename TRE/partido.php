@@ -10,7 +10,7 @@
 
 <body>
 
-   <form method="post" action="isset_post_partido.php" name="dados" onSubmit="return enviardados();">
+   <form method="post" action="insert_partido.php" name="dados" onSubmit="return enviardados();">
 
     <table width="588" border="0" align="center" vAlign="middle">
         <tr>
