@@ -5,7 +5,7 @@ include_once "conexao.php";
 $tabela = $_POST['tabela'];
 $municipio = $_POST['municipio'];
 
-if("$tabela"=="municipio") {
+if("$tabela"=="Partido") {
     $sqlDelete = "DELETE FROM ".$tabela." WHERE Partido = '".$municipio."' ";
 }$sqlDelete = "DELETE FROM Eleitor WHERE CPF = '".$codigo."' ";
 
