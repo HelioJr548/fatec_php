@@ -19,7 +19,7 @@
             </td>
             
             <td width="460">
-                <input name="partido" type="text" class="formbutton" id="partido" size="52" maxlength="150" required>
+                <input name="partido" type="text" class="formbutton" id="partido" size="52" maxlength="150" >
             </td>
         </tr>
 
@@ -28,7 +28,7 @@
                 <label for="sigla"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" >Sigla:</font></label>
             </td>
             <td width="460">
-                <input name="sigla" type="text" class="formbutton" id="sigla" size="52" maxlength="150" required>
+                <input name="sigla" type="text" class="formbutton" id="sigla" size="52" maxlength="150" >
             </td>
             
         </tr>
@@ -47,8 +47,12 @@
             <td>
                 <input name="Submit" type="submit" class="formobjects" value="Cadastrar">
                 <input name="Reset" type="reset" class="formobjects" value="Limpar campos">
-                <button class="waves-effect waves-light btn" type="submit" name="action" formaction="select_all.php">ler
+                <button class="waves-effect waves-light btn" type="submit" name="action" formaction="select_partido.php">ler
                 <button class="waves-effect waves-light btn" type="submit" name="action" formaction="isset_post_partido.php">Imprimir
+                </button>
+                <button class="waves-effect waves-light btn" type="submit" name="action" formaction="deletar_partido.php">Deletar
+                </button>
+                <button class="waves-effect waves-light btn" type="submit" name="action" formaction="index.php">Voltar
                 </button>
             <!--<button type='submit' formaction='pegar.php'>Consultar</button>-->
             </td>

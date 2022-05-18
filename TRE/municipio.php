@@ -19,7 +19,7 @@
             </td>
             
             <td width="460">
-                <input name="municipio" type="text" class="formbutton" id="municipio" size="52" maxlength="150" required>
+                <input name="municipio" type="text" class="formbutton" id="municipio" size="52" maxlength="150" >
             </td>
         </tr>
 
@@ -28,7 +28,7 @@
                 <label for="uf"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" >UF:</font></label>
             </td>
             <td width="460">
-                <input name="uf" type="text" class="formbutton" id="uf" size="52" maxlength="150" required>
+                <input name="uf" type="text" class="formbutton" id="uf" size="52" maxlength="150" >
             </td>
             
         </tr>
@@ -38,7 +38,7 @@
                 <label for="zona"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" >Zona:</font></label>
             </td>
             <td width="460">
-                <input name="zona" type="number" class="formbutton" id="zona" size="52" maxlength="150" required>
+                <input name="zona" type="number" class="formbutton" id="zona" size="52" maxlength="150" >
             </td>
             
         </tr>
@@ -48,7 +48,7 @@
                 <label for="secao"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" >Secao:</font></label>
             </td>
             <td width="460">
-                <input name="secao" type="number" class="formbutton" id="secao" size="52" maxlength="150" required>
+                <input name="secao" type="number" class="formbutton" id="secao" size="52" maxlength="150" >
             </td>
             
         </tr>
@@ -67,8 +67,12 @@
             <td>
                 <input name="Submit" type="submit" class="formobjects" value="Cadastrar">
                 <input name="Reset" type="reset" class="formobjects" value="Limpar campos">
-                <button class="waves-effect waves-light btn" type="submit" name="action" formaction="select_all.php">ler
+                <button class="waves-effect waves-light btn" type="submit" name="action" formaction="select_muni.php">ler
                 <button class="waves-effect waves-light btn" type="submit" name="action" formaction="isset_post_muni.php">Imprimir
+                </button>
+                <button class="waves-effect waves-light btn" type="submit" name="action" formaction=deletar_municipio.php">Deletar
+                </button>
+                <button class="waves-effect waves-light btn" type="submit" name="action" formaction="index.php">Voltar
                 </button>
             <!--<button type='submit' formaction='pegar.php'>Consultar</button>-->
             </td>

@@ -10,16 +10,16 @@
 
 <body>
 
-   <form method="post" action="delete.php" name="dados" onSubmit="return enviardados();">
+   <form method="post" action="delete_elei.php" name="dados" onSubmit="return enviardados();">
 
       <table width="588" border="0" align="center">
 
          <tr>
             <td width="118">
-               <font size="1" face="Verdana, Arial, Helvetica, sans-serif">Código usuário:</font>
+               <font size="1" face="Verdana, Arial, Helvetica, sans-serif">CPF:</font>
             </td>
             <td width="460">
-               <input name="id" type="text" class="formbutton" id="id" size="52" maxlength="150">
+               <input name="cpf" type="text" class="formbutton" id="cpf" size="52" maxlength="150">
             </td>
          </tr>
          <tr></tr>

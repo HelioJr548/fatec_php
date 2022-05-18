@@ -19,7 +19,7 @@
             </td>
             <td>
                 <font size="2">
-                    <input name="nome" type="text" id="nome" class="formbutton" size="52" maxlength="150" required>
+                    <input name="nome" type="text" id="nome" class="formbutton" size="52" maxlength="150" >
                 </font>
             </td>
         </tr>
@@ -30,7 +30,7 @@
             </td>
             <td>
                 <font size="2">
-                    <input name="cpf" type="text" id="cpf" class="formbutton" size="52" maxlength="150" required>
+                    <input name="cpf" type="number" id="cpf" class="formbutton" size="52" maxlength="150" >
                 </font>
             </td>
         </tr>
@@ -41,7 +41,7 @@
             </td>
             <td>
                 <font size="2">
-                    <input name="rg" type="text" id="rg" class="formbutton" size="52" maxlength="150" required>
+                    <input name="rg" type="text" id="rg" class="formbutton" size="52" maxlength="150" >
                 </font>
             </td>
         </tr>
@@ -54,7 +54,7 @@
             </td>
             
             <td width="460">
-                <input name="municipio" type="text" class="formbutton" id="municipio" size="52" maxlength="150" required>
+                <input name="municipio" type="text" class="formbutton" id="municipio" size="52" maxlength="150" >
             </td>
         </tr>
 
@@ -63,7 +63,7 @@
                 <label for="zona"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" >Zona:</font></label>
             </td>
             <td width="460">
-                <input name="zona" type="number" class="formbutton" id="zona" size="52" maxlength="150" required>
+                <input name="zona" type="number" class="formbutton" id="zona" size="52" maxlength="150" >
             </td>
             
         </tr>
@@ -72,7 +72,7 @@
                 <label for="secao"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" >Seção:</font></label>
             </td>
             <td width="460">
-                <input name="secao" type="number" class="formbutton" id="secao" size="52" maxlength="150" required>
+                <input name="secao" type="number" class="formbutton" id="secao" size="52" maxlength="150" >
             </td>
         </tr>
             <td height="85">
@@ -89,11 +89,13 @@
             <td>
                 <input name="Submit" type="submit" class="formobjects" value="Cadastrar">
                 <input name="Reset" type="reset" class="formobjects" value="Limpar campos">
-                <button class="waves-effect waves-light btn" type="submit" name="action" formaction="le_texto_while_elei.php">ler
+                <button class="waves-effect waves-light btn" type="submit" name="action" formaction="select_elei.php">ler
                 <button class="waves-effect waves-light btn" type="submit" name="action" formaction="isset_post_elei.php">Imprimir
                 </button>
-                <button class="waves-effect waves-light btn" type="submit" name="action" formaction="deletar.php">Deletar
-               </button>
+                <button class="waves-effect waves-light btn" type="submit" name="action" formaction="deletar_elei.php">Deletar
+                </button>
+                <button class="waves-effect waves-light btn" type="submit" name="action" formaction="index.php">Voltar
+                </button>
             <!--<button type='submit' formaction='pegar.php'>Consultar</button>-->
             </td>
         </tr>

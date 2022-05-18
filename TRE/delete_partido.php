@@ -2,8 +2,8 @@
 //header("Location: select.php?mensagem=OK");
 include_once "conexao.php";
 
-$codigo = $_POST['id'];
-$sqlDelete = "DELETE FROM Eleitor WHERE CPF = '".$codigo."' ";
+$partido = $_POST['partido'];
+$sqlDelete = "DELETE FROM Partido WHERE Partido = '".$partido."' ";
 
 if (!mysqli_query($conexao,$sqlDelete))
 {

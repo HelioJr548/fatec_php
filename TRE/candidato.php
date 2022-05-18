@@ -19,7 +19,7 @@
             </td>
             
             <td width="460">
-                <input name="municipio" type="text" class="formbutton" id="municipio" size="52" maxlength="150" required>
+                <input name="municipio" type="text" class="formbutton" id="municipio" size="52" maxlength="150" >
             </td>
 
             
@@ -30,10 +30,10 @@
                 <label for="partido"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" >Partido filiado:</font></label>
             </td>
             <td width="460">
-                <input name="partido" type="text" class="formbutton" id="partido" size="52" maxlength="150" required>
+                <input name="partido" type="text" class="formbutton" id="partido" size="52" maxlength="150" >
             </td>
             <td width="20">
-                <input name="sigla" type="text" class="formbutton" id="sigla" size="7" maxlength="150" placeholder="Sigla Partido" required>
+                <input name="sigla" type="text" class="formbutton" id="sigla" size="7" maxlength="150" placeholder="Sigla Partido" >
             </td>
         </tr>
         <tr>
@@ -41,7 +41,7 @@
                 <label for="candidato"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" >Nome completo:</font></label>
             </td>
             <td width="460">
-                <input name="candidato" type="text" class="formbutton" id="candidato" size="52" maxlength="150" required>
+                <input name="candidato" type="text" class="formbutton" id="candidato" size="52" maxlength="150" >
             </td>
         </tr>
 
@@ -51,7 +51,7 @@
             </td>
             <td>
                 <font size="2">
-                    <input name="cargo" type="text" id="cargo" class="formbutton" size="52" maxlength="150" required>
+                    <input name="cargo" type="text" id="cargo" class="formbutton" size="52" maxlength="150" >
                 </font>
             </td>
         </tr>
@@ -70,8 +70,12 @@
             <td>
                 <input name="Submit" type="submit" class="formobjects" value="Cadastrar">
                 <input name="Reset" type="reset" class="formobjects" value="Limpar campos">
-                <button class="waves-effect waves-light btn" type="submit" name="action" formaction="le_texto_while_cand.php">ler
+                <button class="waves-effect waves-light btn" type="submit" name="action" formaction="select_cand.php">ler
                 <button class="waves-effect waves-light btn" type="submit" name="action" formaction="isset_post_cand.php">Imprimir
+                </button>
+                <button class="waves-effect waves-light btn" type="submit" name="action" formaction="deletar_cand.php">Deletar
+                </button>
+                <button class="waves-effect waves-light btn" type="submit" name="action" formaction="index.php">Voltar
                 </button>
             <!--<button type='submit' formaction='pegar.php'>Consultar</button>-->
             </td>
