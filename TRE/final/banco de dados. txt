@@ -22,7 +22,7 @@ CREATE TABLE Eleitor (
  Municipio VARCHAR(100), 
  Zona INT,  
  Secao INT, 
- CPF INT,  
+ CPF VARCHAR(100),  
  RG VARCHAR(100),  
  Nome VARCHAR(200), 
  PRIMARY KEY (municipio,zona,secao,cpf),
