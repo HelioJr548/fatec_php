@@ -3,20 +3,19 @@
 require_once("init.php");
 
 # definindo a classe para conexão com banco de dados
-class Banco
-{
-    #Escopoo atributo Public ele pode ser acessado e alterado do lado de fora por qualquer
-    #Escopoo atributo Private so pode ser acessado de dewntro de classe
-    #Escopoo atributo Protected pode ser invocado por suas subclasses e em qualquer lugar da classe, sem problemass
+class Banco {
+    #Escopo atributo Public ele pode ser acessado e alterado do lado de fora por qualquer
+    #Escopo atributo Private so pode ser acessado de dewntro de classe
+    #Escopo atributo Protected pode ser invocado por suas subclasses e em qualquer lugar da classe, sem problemas
     
     protected $mysqli;
     
     # Metodos são as funções existentes somente dentro de cada objeto
-    # public function __construct() inicializa quanto a classe é acionada, o __construct() pode ou bao receber valores de entrada 
-    public function __construct()
+    # public function __construct() inicializa quanto a classe é acionada, o __construct() pode ou nao receber valores de entrada 
+    public function __construct() 
     {
-        echo "conexão efetuada com sucesso";
-        $this->conecao();
+        echo "Conexão efetuada com sucesso!";
+        $this->conexao();
     }
     
     # Métodos criados para iniciar a conexão com o banco de dados

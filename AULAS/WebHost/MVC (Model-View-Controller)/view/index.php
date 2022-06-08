@@ -1,12 +1,15 @@
-<php require_once( "../model/banco.php" ); ?>
-    
+<?php require_once("../model/banco.php")?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
     
-    <?php include("head.php"); ?>
-    
+    <?php include("head.php");?>
+
 <body>
-    <?php include("menu.php"); ?>
+
+    <?php new Banco();?>
+    <?php include("menu.php");?>
+
     <table class="table">
         <thead>
             <tr>
@@ -20,5 +23,6 @@
             </tr>
         </thead>
     </table>
+    
 </body>
 </html>
