@@ -9,11 +9,11 @@ class Cadastro extends Banco {
     private $preco;
     private $flag;
     private $data;
-    
+
     /*A função set significa...setar,configurar,colocar,atribuir valor em uma variável do objeto.*/
     
     # Ou seja,set escreve o valor na variável 
-    
+
     public function setNome($string) {
         $this->nome = $string;
     }
@@ -22,7 +22,7 @@ class Cadastro extends Banco {
     }
     public function setQuantidade($string) {
         $this->quantidade = $string;
-    } 
+    }
     public function setPreco($string) {
         $this->preco = $string;
     }
@@ -32,31 +32,34 @@ class Cadastro extends Banco {
     public function setData($string) {
         $this->data = $string;
     }
-    
+
     /*As função Get significa pegar,acessar...informação de uma variável de um objeto*/
     
     #Ou seja,GET le o valor na variável 
-    
+
     public function getNome() {
         return $this->nome;
-    }
+    }    
     public function getAutor() {
-        return $this->autor;
-    }
+        return $this->autor; 
+    }    
     public function getQuantidade() {
         return $this->quantidade;
     }
     public function getPreco() {
         return $this->preco; 
-    }
+    } 
     public function getFlag() {
-        return $this->flag;
-    }
+        return $this->flag; 
+    }    
     public function getData() {
-        return $this->data;
+        return$this->data;
     }
-    
+
     public function incluir() {
-        return $this->setLivro($this->getNome(),$this->getAutor(),$this->getQuantidade(),$this->getPreco(),$this->getData());
+        return $this->setLivro($this->getNome(),
+        $this->getAutor(),$this->getQuantidade(),
+        $this->getPreco(),$this->getData());
     }
-} ?>
+}
+?>

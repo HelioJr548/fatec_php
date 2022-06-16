@@ -1,5 +1,4 @@
 <?php require_once("../model/banco.php")?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
     
