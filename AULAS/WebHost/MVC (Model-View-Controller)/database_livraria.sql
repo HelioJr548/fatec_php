@@ -1,4 +1,4 @@
-CREATE TABLE livraria
+CREATE TABLE livros
 (
     nome VARCHAR(255) NOT null,
     autor VARCHAR(255),
